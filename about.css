@@ -1,0 +1,101 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    height:1700px;
+    width:100%;
+    box-sizing: border-box;
+    background-image: url('k1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    color: aliceblue;
+}
+
+/* About section styling */
+#about1{
+    margin-top: 0%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    height:auto;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Skill section styling */
+#skill {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#skill ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Project section styling */
+#project {
+    margin-top: 5%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+/* Video container styling */
+#pro1 {
+    position: relative;
+    height: 15vw;
+    width: 25vw;
+    overflow: hidden;
+    border:.2em solid black;
+}
+#pro2 {
+    position: relative;
+    height: 15vw;
+    width: 25vw;
+    overflow: hidden;
+    border:.2em solid black;
+}
+#pro3 {
+    position: relative;
+    height: 15vw;
+    width: 25vw;
+    overflow: hidden;
+    border:.2em solid black;
+}
+
+/* Video styling */
+.bgVideo {
+    display: flex;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    object-fit: cover;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+   body{
+    height: 1400px;
+   }
+    #about1, #skill, #project {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
