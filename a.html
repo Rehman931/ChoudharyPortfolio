@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Choudhary Services</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="hideCommunicationOptions()">Home</a></li>
+                <li><a href="#" onclick="showCommunicationOptions('Contact')">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <section class="services">
+        <div id="service1" class="service-card" onclick="showCommunicationOptions('Website Development')">
+            <h2>Website Development</h2>
+            <p>Build your professional website with modern. <br><br> FOR CONTACT CLICK <em>HERE</em></p>
+        </div>
+
+        <div id="service2" class="service-card" onclick="showCommunicationOptions('Freelancing')">
+            <h2>Freelancing</h2>
+            <p>Hire me for freelance projects and tasks.<br><br> FOR CONTACT CLICK <em>HERE</em></p>
+        </div>
+        <div id="service3" class="service-card" onclick="showCommunicationOptions('Video Editing')">
+            <h2>Video Editing</h2>
+            <p>Get professional video editing services.<br><br> FOR CONTACT CLICK <em>HERE</em></p>
+        </div>
+        <div id="service4" class="service-card" onclick="showCommunicationOptions('Content Writing')">
+            <h2>Content Writing</h2>
+            <p>Quality content writing services for your needs. <br><br> FOR CONTACT CLICK <em>HERE</em></p>
+        </div>
+    </section>
+
+    <div id="communication-overlay">
+        <div class="communication-box">
+            <h3 id="service-title"></h3>
+            <button onclick="sendWhatsAppMessage(currentService)">WhatsApp</button>
+            <button onclick="sendMessengerMessage(currentService)">Messenger</button>
+            <button onclick="sendInstagramMessage(currentService)">Instagram</button>
+            <button onclick="hideCommunicationOptions()">Close</button>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>Contact: <a href="mailto:sanaurrehman931@gmail.com">sanaurrehman931@gmail.com</a></p>
+        <p>Phone: <a href="tel:+7055063855">7055063855</a></p>
+    </footer>
+
+    <script src="a.js"></script>
+</body>
+</html>
