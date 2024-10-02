@@ -22,23 +22,52 @@ body {
     padding: 0;
 }
 
-/* Header link styles */
+/* General styles for header links */
 #head a {
     color: #fafafa;
     font-size: x-large;
     font-weight: 700;
     font-style: oblique;
     text-decoration: none;
+    padding: 0 2%; /* Adjusted padding */
     position: relative;
-    left: 80vw;
     top: 15%;
-    padding-left: 2%;
 }
 
+/* Hover effect for header links */
 #head a:hover {
     color: #ff6b6b;
     text-shadow: 0 0 15px #ff6b6b, 0 0 30px #ff6b6b;
     transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Responsive design for header links */
+@media (max-width: 1145px) {
+    #head a {
+        font-size: large;
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 764px) {
+    #head a {
+        font-size: medium;
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 490px) {
+    #head a {
+        font-size: small;
+        padding: 0 3%;
+    }
+}
+
+@media (max-width: 270px) {
+    #head a {
+        font-size: smaller;
+        padding: 0 2%;
+    }
 }
 
 /* Text section */
@@ -143,39 +172,8 @@ i:hover {
         font-size: small;
     }
 }
-/* New styles for Business Queries link */
-#head a:nth-child(3) {
-    left: calc(80vw + 10%); /* Adjust position based on existing links */
-}
 
-/* Responsive design for Business Queries link */
-@media (max-width: 1145px) {
-    #head a:nth-child(3) {
-        left: calc(50vw + 10%);
-    }
-}
-
-@media (max-width: 1038px) {
-    #head a:nth-child(3) {
-        left: calc(45vw + 10%);
-        font-size: large;
-    }
-}
-
-@media (max-width: 490px) {
-    #head a:nth-child(3) {
-        left: calc(30vw + 10%);
-        font-size: small;
-    }
-}
-
-@media (max-width: 270px) {
-    #head a:nth-child(3) {
-        left: calc(10vw + 10%);
-        font-size: small;
-    }
-}
-
+/* Responsive for contact section in larger screens */
 @media (min-width: 1516px) {
     #Contact {
         top: 1080px;
