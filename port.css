@@ -143,6 +143,38 @@ i:hover {
         font-size: small;
     }
 }
+/* New styles for Business Queries link */
+#head a:nth-child(3) {
+    left: calc(80vw + 10%); /* Adjust position based on existing links */
+}
+
+/* Responsive design for Business Queries link */
+@media (max-width: 1145px) {
+    #head a:nth-child(3) {
+        left: calc(50vw + 10%);
+    }
+}
+
+@media (max-width: 1038px) {
+    #head a:nth-child(3) {
+        left: calc(45vw + 10%);
+        font-size: large;
+    }
+}
+
+@media (max-width: 490px) {
+    #head a:nth-child(3) {
+        left: calc(30vw + 10%);
+        font-size: small;
+    }
+}
+
+@media (max-width: 270px) {
+    #head a:nth-child(3) {
+        left: calc(10vw + 10%);
+        font-size: small;
+    }
+}
 
 @media (min-width: 1516px) {
     #Contact {
